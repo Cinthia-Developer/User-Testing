@@ -1,50 +1,68 @@
 
-/*-----------------------------header----------------------------------------------*/
-ul li a{
-	list-style: none;
-	text-decoration: none;
-	color:#fffdfd;
-}
-nav{
-	margin-top: 5%;
-}
-.oscuro{
-	background: #000;
-	background-color:rgba(22,17,49,0.5);
-}
-.logo{
-	margin-top: 11%;
-}
-.icon-container
-{
-	width: 150px;
-	height: 150px;
-	margin: 0 auto;
-	line-height: 150px;
-	font-size: 40px;
-	text-align: center;
-	box-shadow: -2px 2px 10px rgba(0,0,0,0.2);
-	border-radius: 200px;
-	color: skyblue;
-	margin-top: 40px;
-}
-header{
-	background: url(../image/large.jpg)no-repeat;
-	background-size: cover;
-	height: 600px;
-	position: relative;
+/*-------------HEADER-------------*/
+.sombra{
+    height: 539px;
+    color: #fff;
+    background: rgba(65,72,80,0.6);
 }
 
-.title-frase{
-	color: #fffdfd;
+.icon-container{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    line-height: 150px;
+    font-size: 60px;
+    text-align: center;
+    box-shadow: -2px 2px 10px rgba(0,0,0,0.4);
+    border-radius: 100%;
+    color:skyblue;
+}
+.size-logo{
+    width: 200px;
+    height: auto;
+}
+
+.img-fondo{
+    background-image:url(../image/large.jpg);
+    background-size: cover;
+    height: 600px;
 }
 .frase{
-	position: absolute;
-	top:50%;
-	left: 50%;
-	text-align:center; 
-    display:table;
-    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    margin-top: 200px;
+    color: #fff;
+}
+.header-banner{
+    margin-top: 115px;
+    color: #fff;
+    height: 139px;
+    background: rgba(78,126,176,0.9);
+}
+.header-banner p{
+ margin-left: 130px;   
+}
+.header-banner button {
+    background-color: transparent;
+    border-color: 2spx solid #fff;
+    text-align: center;
+    margin-top: 50px;
+    height: 35px;
+    width: 130px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.list-inline li a{
+    color: #fff;
+}
+.navbar button span{
+    background-color: white;
+}
+.navbar button{
+    background-color: skyblue;
+}
+.nav li a{
+    color: #fff;
+    font-size: 14px;
 }
 /*-----------------------------------section servicios------------------------------------------*/
 .servicios{
@@ -69,8 +87,9 @@ h3{
 h4{
   color: #88a0b6;  
 }
-p{
+.servicios p{
     font-size: 15px;
+    text-align: center;
 }
 hr{
     width: 100%;
@@ -202,12 +221,50 @@ footer{
     font-size: 30px;
 }
 /*-----------------------------------contactanos------------------------------------------*/
+header img{
+    width: 20%;
+    float: left;
+    display: inline;
+}
+header li{
+    float: right;
+}
+@media screen and (max-widht:600px;){
+    header nav{
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+    }
+    header nav ul li{
+        display: block;
+        border-bottom: rgba (255, 255, 255, .3);
+     }
+    .menu_bar{
+        display: block;
+        width: 100%;
+        background-color: red;
+    }
+    .menu_bar .btn-menu{
+        display: block;
+        padding: 20px;
+        background: yellow;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+}
+/*-----------------------------------contactanos------------------------------------------*/
 .formulario{
     background-image: url(../image/large.jpg);
     background-size: cover;
     height: 600px;
+    width: 100%;
 }
-h2{
+.formulario h2{
     border-bottom: 2px solid dimgray;
     padding-bottom: 10px;
 }
@@ -218,16 +275,25 @@ h2{
     margin: 100px auto;
     padding:0 50px 50px;
 }
-h4{
+.formulario h4{
     color: black;
     width: 100%;
     padding: 10px 1px;
 }
-span{
+.formulario span{
     color: red;
 }
-input{
+.uno, .dos, .tres{
     margin-right: 30%;
     float: right;
     width: 40%;
 }
+.cuatro{
+    background-color: dodgerblue;
+    border: 1pinline-blockx solid dodgerblue;
+}
+.ult1{
+    float: left;
+    display: inline-block;
+}
+.ult2{float: right;}
