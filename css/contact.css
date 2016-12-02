@@ -1,0 +1,35 @@
+
+.contacto{
+    background-image: url(../image/large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formulario{
+    margin: 10% auto;
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 8px solid #6897ce;
+}
+span{ color: red;}
+h3{
+    border-bottom: 2px solid dimgray;
+    width: 83%;
+}
+.btn-default{
+    background-color:#74a3db;
+    color: white;
+    
+}
+
+
+@media screen and (max-width:768px){
+    .formulario{
+        width: 100%;
+        text-align: left;
+    }
+    a{
+        text-align: left;
+    }
+}
